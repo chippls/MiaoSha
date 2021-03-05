@@ -1,9 +1,11 @@
 package com.java.dao;
 
 import com.java.entity.Stock;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Mapper
 public interface StockDAO {
     //根据商品id查询库存信息
     Stock checkStock(Integer id);
